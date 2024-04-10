@@ -8,8 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import {defineProps, defineEmits, ref} from 'vue';
-
+import { defineProps, defineEmits, ref } from 'vue';
 
 defineProps<{
 	items: {
@@ -34,7 +33,6 @@ const onClick = (item: any) => {
 	flex-direction: column;
 	border: 1px solid lightblue;
 }
-
 .item {
 	padding: 10px;
 	cursor: pointer;
@@ -42,7 +40,6 @@ const onClick = (item: any) => {
 	font-weight: bold;
 	min-width: 250px;
 }
-
 .itemSelected {
 	padding: 10px;
 	cursor: pointer;
@@ -51,7 +48,6 @@ const onClick = (item: any) => {
 	min-width: 250px;
 	background: lightskyblue;
 }
-
 .item:hover {
 	background: #f0f0ff;
 }

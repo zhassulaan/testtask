@@ -23,14 +23,12 @@
 				<span>
 					<input :value="attr.size.width" type="number"/> x <input :value="attr.size.height" type="number"/>
 				</span>
-
 			</div>
 
 			<div v-if="attr.weight" class="field">
 				<span class="title">weight:</span>
 				<input :value="attr.weight" type="number"/>
 			</div>
-
 		</div>
 
 		<div class="add">
@@ -52,7 +50,7 @@
 </template>
 
 <script setup lang="ts">
-import {defineProps, defineEmits, ref, watch} from "vue";
+import { defineProps, defineEmits, ref, watch } from "vue";
 
 
 const props = defineProps<{
@@ -69,10 +67,7 @@ const props = defineProps<{
 const emit = defineEmits(['click']);
 
 const selectRef = ref<HTMLSelectElement>();
-
-
 const innerItem = ref(props.item);
-
 
 watch(props.item, () => {
 	innerItem.value = props.item;

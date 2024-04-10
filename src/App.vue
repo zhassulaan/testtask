@@ -6,17 +6,13 @@
 </template>
 
 <script setup lang="ts">
-
+import { ref } from "vue";
 import ItemList from './components/ItemList.vue';
 import ItemContent from './components/ItemContent.vue';
 import Data from './components/mockData';
-import {ref} from "vue";
 
 const data = ref(Data);
-
-
 const selectedItem = ref();
-
 
 const onClick = (value: any) => {
 
